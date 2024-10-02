@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color:white;
+    color: black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header-text {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.slogan {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: black;
+}
+
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-left: 15px;
+}
+
+p small {
+    color: #ccc;
+    font-size: 0.8rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00539f;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        background-color: white;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 15px;
+    }
+
+    .hamburger {
+        display: block;
+        color: #003366;
+    }
+
+    .hamburger.active + ul {
+        display: flex;
+    }
+}
+
+.slideshow-container {
+    position: relative; 
+    width: 100%; 
+    height: auto; 
+    max-width: 100%;
+    overflow: hidden; 
+}
+
+.slides {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.slides img {
+    width: 100%;
+    height: auto; 
+}
+
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+#joinClubSection {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#joinClubBtn {
+    padding: 15px 25px;
+    background-color: #00539f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#joinClubBtn:hover {
+    background-color: #003366;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.supported-by .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollTopBtn:hover {
+    background-color: #555;
+}
