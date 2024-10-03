@@ -211,3 +211,26 @@ footer {
 #scrollTopBtn:hover {
     background-color: #555;
 }
+
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+    .supported-by .logos {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .social-icons a img {
+        width: 25px;
+        height: 25px;
+    }
+}
