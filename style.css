@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +8,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #79D5E9;
+    color: black;
 }
 
 header {
@@ -70,7 +71,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #00539f;
+    background-color: whitesmoke;
     border-radius: 5px;
 }
 
@@ -144,13 +145,6 @@ nav ul li a:hover {
     user-select: none;
 }
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
 
 #joinClubSection {
     text-align: center;
@@ -200,7 +194,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #333;
+    background-color: #000000;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -214,19 +208,35 @@ footer {
 
 @media (max-width: 768px) {
     footer {
-        padding: 10px 5px;
-        font-size: 0.9rem;
+        position: relative; 
+        width: 100%; 
+        height: auto; 
+        max-width: 100%;
+        overflow: hidden; 
+    }
+
+    .supported-by {
+        margin-bottom: 30px;
     }
     .supported-by .logos {
-        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         gap: 10px;
-        text-align: center;
+    }
+
+    .supported-by .logos img {
+        width: 70px;  
+        height: auto;
     }
 
     .social-icons {
-        flex-direction: column;
+        flex-direction: row; 
         gap: 10px;
-        text-align: center;
+        justify-content: center; 
     }
 
     .social-icons a img {
@@ -234,3 +244,4 @@ footer {
         height: 25px;
     }
 }
+
