@@ -1,4 +1,3 @@
-// Slideshow functionality
 let slideIndex = 0;
 
 function showSlides() {
@@ -11,23 +10,34 @@ function showSlides() {
         slideIndex = 1;
     }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
+    setTimeout(showSlides, 5000); 
 }
 
 showSlides();
 
-// Navigation responsiveness for small screens
 document.querySelector('.hamburger').addEventListener('click', function() {
-    this.classList.toggle('active');
-    let menu = document.querySelector('#menu');
-    if (this.classList.contains('active')) {
-        menu.style.display = 'flex';
-    } else {
-        menu.style.display = 'none';
-    }
+    const hamburger = document.querySelector('.hamburger');
+    const closeMenu = document.querySelector('.close-menu');
+    const menu = document.querySelector('nav ul');
+    
+    menu.classList.toggle('active');
+    
+    hamburger.classList.add('hidden'); 
+    closeMenu.classList.add('active'); 
 });
 
-// "Return to Top" button functionality
+
+document.querySelector('.close-menu').addEventListener('click', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const closeMenu = document.querySelector('.close-menu');
+    const menu = document.querySelector('nav ul');
+
+    menu.classList.remove('active');
+    
+    hamburger.classList.remove('hidden'); 
+    closeMenu.classList.remove('active'); 
+});
+
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 window.onscroll = function() {
@@ -49,7 +59,6 @@ function scrollToTop() {
     });
 }
 
-// Enhance the "Join Now" button style dynamically
 const joinBtn = document.getElementById('joinClubBtn');
 joinBtn.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
 joinBtn.style.fontSize = '1.2rem';
@@ -65,3 +74,4 @@ joinBtn.addEventListener('mouseout', () => {
     joinBtn.style.transform = 'scale(1)';
     joinBtn.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
 });
+
