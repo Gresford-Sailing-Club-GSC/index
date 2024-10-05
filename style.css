@@ -49,7 +49,6 @@ header {
     text-decoration: underline; 
 }
 
-
 .header-text {
     text-align: left;
     margin-left: 10px;
@@ -60,7 +59,6 @@ header {
     font-size: 0.9rem;
     color: black;
 }
-
 
 .logo img {
     width: 120px;
@@ -105,46 +103,128 @@ nav ul li a:hover {
 }
 
 .hamburger {
-    display: none;
+    display: none; 
     font-size: 30px;
     cursor: pointer;
-    color: white;
+    color: black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10; 
 }
 
+
 @media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #888;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: #888;
+        margin: 6px 0;
+        transition: transform 0.4s ease, opacity 0.4s ease, background-color 0.4s ease;
+    }
+
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px); 
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .hamburger.hidden {
+        display: none;
+    }
+
+    .close-menu {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+        z-index: 12; 
+        display: none; 
+    }
+
+    
+    .close-menu.active {
+        display: block;
+    }
+
     nav ul {
         flex-direction: column;
         display: none;
         background-color: white;
-        width: 100%;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 80px;
+        padding-left: 20px; 
+        z-index: 9;
+        transition: right 0.4s ease; 
+    }
+
+    nav ul.active {
+        display: flex;
+        right: 0; 
     }
 
     nav ul li {
-        margin: 0;
-        padding: 10px;
-        text-align: center;
+        margin: 20px 0;
+    }
+
+    nav ul li.menu-label {
+        font-size: 1.3rem;
+        color: black;
+        margin-bottom: 30px;
+        pointer-events: none; 
     }
 
     nav ul li a {
-        padding: 15px;
-    }
-
-    .hamburger {
-        display: block;
-        color: #003366;
-    }
-
-    .hamburger.active + ul {
-        display: flex;
+        color: black;
+        font-size: 0.9rem;
+        padding: 10px 0;
+        text-decoration: none;
     }
 }
 
+@media (min-width: 768px) {
+    .close-menu{
+        display: none;
+    }
+    .menu-label{
+        display: none;
+    }
+}
 .slideshow-container {
     position: relative; 
     width: 100%; 
     height: auto; 
     max-width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .slides {
@@ -156,10 +236,8 @@ nav ul li a:hover {
 
 .slides img {
     width: 100%;
-    height: auto; 
+    height: auto;
 }
-
-
 
 .prev, .next {
     cursor: pointer;
@@ -173,7 +251,6 @@ nav ul li a:hover {
     border-radius: 50%;
     user-select: none;
 }
-
 
 #joinClubSection {
     text-align: center;
@@ -200,11 +277,12 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
 footer .line {
-    border-top: 1px solid #ccc; 
-    padding-top: 10px; 
-    margin-top: 20px; 
-    text-align: center; 
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .supported-by .logos {
@@ -247,12 +325,13 @@ footer .line {
         width: 100%; 
         height: auto; 
         max-width: 100%;
-        overflow: hidden; 
+        overflow: hidden;
     }
 
     .supported-by {
         margin-bottom: 30px;
     }
+    
     .supported-by .logos {
         position: relative;
         width: 100%;
@@ -264,14 +343,14 @@ footer .line {
     }
 
     .supported-by .logos img {
-        width: 70px;  
+        width: 70px;
         height: auto;
     }
 
     .social-icons {
         flex-direction: row; 
         gap: 10px;
-        justify-content: center; 
+        justify-content: center;
     }
 
     .social-icons a img {
@@ -279,4 +358,3 @@ footer .line {
         height: 25px;
     }
 }
-
