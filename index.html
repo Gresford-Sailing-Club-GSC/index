@@ -4,53 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gresford Sailing Club</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    
     <header>
         <div class="logo">
-            <img src="assets/logo/gsc-logo.jpg" alt="Website Logo">
+            <img src="assets/images/gsc-logo.jpg" alt="Website Logo">
         </div>
+        
         <div class="header-text">
             <h1>Gresford Sailing Club</h1>
-            <p class="slogan"><small>Probably the smallest sailing club in the world</small></p>    
+            <p class="slogan"><small>Probably the smallest sailing club in the world</small></p>
         </div>
+    
         <nav>
-            <label class="hamburger">&#9776;</label>
+            <div class="hamburger-container">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+    
             <ul id="menu">
+                <li class="menu-label">Menu</li> 
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#newsfeed">News</a></li>
                 <li><a href="join.html">Join GSC</a></li>
                 <li><a href="#about">How to find us</a></li>
             </ul>
         </nav>
+        <div class="menu-bar">
+            <span class="close-menu">&times;</span>
+        </div>
     </header>
+    
+            
 
     <section id="home">    
         <div class="slideshow-container">
             <div class="slides fade">
-                <img src="assets/boat4.jpg" alt="Boat 4">
+                <img src="assets/images/boat4.jpg" alt="Boat 4">
             </div>
             <div class="slides fade">
-                <img src="assets/boatt.jpg" alt="Boats">
+                <img src="assets/images/boatt.jpg" alt="Boats">
             </div>
+ 
         </div>
         
 
         <div class="content-div">
-            <div class="uagb-container-inner-blocks-wrap">
+            
                 <p>Whether you're a beginner eager to dive into the world of watersports or a seasoned sailor in search of a vibrant community, <strong>Gresford Sailing Club</strong> is the perfect place for you..&nbsp; </p>
                 
                 <p>We offer sailing opportunities year-round, with activities designed for everyone from novices to experts. Whether you want to enjoy a leisurely sail on the beautiful waters or challenge yourself in competitive races, we have something for every skill level. Join us to enhance your skills, make new friends, and embrace the joys of sailing!</p>
                 
                 <p>Founded in <strong>1959</strong> by Arthur Jones and his friend Reg Gibbs, our club was established as a community-based organization aimed at encouraging family sailing and keeping membership costs low. This ethos remains at the heart of our club today. </p>
-            </div>
         </div>
     </section>
 
     <section id="joinClubSection">
-        <button id="joinClubBtn" onclick="location.href='join.html'">Join the Club</button>
+        <button id="joinClubBtn" onclick="location.href='#membership'">Join the Club</button>
     </section>
 
     <button onclick="scrollToTop()" id="scrollTopBtn">Top</button>
@@ -70,10 +85,10 @@
             <p>Follow us:</p>
             <div class="social-icons">
                 <a href="https://www.facebook.com/people/The-Real-Gresford-Sailing-Club/100086389089897/" target="_blank">
-                    <img src="assets/fb.png" alt="Facebook" width="40" height="40">
+                    <img src="assets/icons/fb.png" alt="Facebook" width="40" height="40">
                 </a>
                 <a href="https://www.youtube.com/channel/UCymstTr0Qc9lUwZJQW7_AKA" target="_blank">
-                    <img src="assets/youtube.png" alt="YouTube" width="40" height="40">
+                    <img src="assets/icons/youtube.png" alt="YouTube" width="40" height="40">
                 </a>
             </div>
         </div>
@@ -87,6 +102,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
