@@ -1,5 +1,5 @@
 document.getElementById('membershipFormBtn').addEventListener('click', function() {
-    window.location.href = 'https://forms.office.com/e/UsKsD3UFdj';
+    window.location.href = "https://forms.office.com/e/UsKsD3UFdj";
 });
 
 
