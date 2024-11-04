@@ -8,9 +8,8 @@
 </head>
 <body>
     <header>
-        
         <div class="logo">
-            <img src="assets/logo/gsc-logo.jpg" alt="Website Logo">
+            <img src="assets/images/gsc-logo.jpg" alt="Website Logo">
         </div>
         
         <div class="header-text">
@@ -43,11 +42,28 @@
     <section id="join-page">
         <div class="content-div">
             <h2>Ready to sail with Us?</h2>
-            <p>We’re excited to welcome new members to our sailing community! Whether you’re an experienced sailor or just starting to explore the beauty of life on the water, our club offers a place for everyone. By joining, you’ll become part of a passionate and supportive group that shares your love for the water</p>
-            <p>To get started,  click the button below and you’ll be redirected to our Microsoft Forms to fill in your details. A member of our team will review your submission and get back to you as soon as possible with all the details you need to begin your journey with us.</p>
-            <p>Joining takes just a few minutes, but it’s your first step towards an exciting adventure filled with learning, new friendships, and unforgettable sailing experiences.</p>
+            <p>We’re excited to welcome new members to our sailing community! Whether you’re an experienced sailor or just starting to explore the beauty of life on the water, our club offers a place for everyone. By joining, you’ll become part of a passionate and supportive group that shares your love for the water.</p>
+            <form id="membershipForm" style="margin-top: 20px;">
+                <h3>Membership Application Form</h3>
+                
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
 
-            <button id="membershipFormBtn">Fill out Membership Form</button>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefer_not_to_say">Prefer not to say</option>
+                </select><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </section>
 
