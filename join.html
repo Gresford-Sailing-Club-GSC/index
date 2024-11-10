@@ -29,6 +29,7 @@
                 <li><a href="#newsfeed">News</a></li>
                 <li><a href="join.html">Join GSC</a></li>
                 <li><a href="#about">How to find us</a></li>
+                <li><a href="events.html">Events Calendar</a></li>
             </ul>
         </nav>
         <div class="menu-bar">
@@ -43,27 +44,39 @@
             <p>To get started, please fill in your details and click "Submit." You will then receive the account number and sort code for making the payment. A member of our team will review your submission and get back to you as soon as possible with all the details you need to begin your journey with us.</p>
             <p>Joining takes just a few minutes, but it’s your first step towards an exciting adventure filled with learning, new friendships, and unforgettable sailing experiences.</p>
 
-            <form id="membershipForm" style="margin-top: 20px;">
+            <form id="membershipForm" style="margin-top: 20px; max-width: 400px;">
                 <h3>Membership Application Form</h3>
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender" required>
+                
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name" style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+                
+                <label for="gender">Gender:</label><br>
+                <select id="gender" name="gender" required style="width: 100%; padding: 8px; margin: 8px 0;">
+                    <option value="" disabled selected>Select your gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Other</option>
                     <option value="prefer_not_to_say">Prefer not to say</option>
-                </select><br><br>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required><br><br>
-                <button type="submit">Submit</button>
+                </select><br>
+                
+                <label for="membership">Membership Type:</label><br>
+                <select id="membership" name="membership" required style="width: 100%; padding: 8px; margin: 8px 0;">
+                    <option value="" disabled selected>Select membership type</option>
+                    <option value="Adult - £75">Adult - £75</option>
+                    <option value="Young Person - £25">Young Person (18 - 25) - £25</option>
+                    <option value="Junior - £15">Junior (Up to 18 years) - £15</option>
+                    <option value="End of Season - £35">End of Season - £35</option>
+                </select><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address" style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+                
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" style="width: 100%; padding: 8px; margin: 8px 0;"><br>
+                
+                <button type="submit" style="width: 100%; padding: 10px; background-color: #21094a; color: white; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
             </form>
-
+            
             <div id="responseMessage" style="margin-top: 20px;"></div>
         </div>
     </section>
