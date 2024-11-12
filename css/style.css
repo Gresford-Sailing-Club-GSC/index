@@ -30,12 +30,6 @@ header {
     margin: 0 auto;
 }
 
-.content-div p {
-    margin-bottom: 20px;
-    font-size: 1.2em; 
-    color: #333;
-}
-
 .content-div p strong {
     font-weight: bold; 
 }
@@ -58,6 +52,7 @@ header {
     margin-top: 5px;
     font-size: 0.9rem;
     color: black;
+    font-style: italic;
 }
 
 .logo img {
@@ -68,11 +63,6 @@ header {
 h1 {
     font-size: 1.8rem;
     margin-left: 15px;
-}
-
-p small {
-    color: #ccc;
-    font-size: 0.8rem;
 }
 
 nav {
@@ -359,3 +349,34 @@ footer .line {
     }
 }
 
+#join-page {
+    padding: 50px 20px;
+    background-color: #d8f0ff;
+    text-align: center; /* Center-aligns content */
+}
+
+#join-page h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#join-page p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+#membershipFormBtn {
+    padding: 15px 25px;
+    background-color: #00539f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#membershipFormBtn:hover {
+    background-color: #003366;
+}
