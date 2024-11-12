@@ -74,4 +74,3 @@ joinBtn.addEventListener('mouseout', () => {
     joinBtn.style.transform = 'scale(1)';
     joinBtn.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
 });
-
