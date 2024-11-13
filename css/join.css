@@ -405,36 +405,71 @@ section h2 {
     font-size: 1.8rem;
     color: #003366;
     margin-bottom: 20px;
-    /* Center the header */
     text-align: center;
 }
 
-section article {
+.activity {
     margin-bottom: 20px;
     padding: 15px;
-    background-color: transparent;
+    background-color: #e6f3ff; 
     border-radius: 5px;
-    box-shadow: none; 
+    border: 1px solid #003366;
 }
 
-section article h3 {
+.activity-header {
     font-size: 1.5rem;
-    color: #000000;
-    margin-bottom: 10px;
+    color: #003366;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #003366;
 }
 
-section article p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 10px;
-    line-height: 1.5;
+.activity-header:hover {
+    background-color: #cce7ff;
 }
 
-#calendar-embed iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
-    margin-bottom: 20px;
+.click-here {
+    font-size: 0.9rem;
+    color: #003366;
+    margin: 0;
+}
+
+.activity-details {
+    padding: 10px;
+    color: #003366;
+    border-top: 1px solid #003366;
+    margin-top: 10px;
+}
+
+.dropdown {
+    display: none;
+    padding: 10px;
+    background-color: #d9ecff; 
+    border: 1px solid #003366;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown ul li {
+    font-size: 1rem;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.dropdown ul li strong {
+    color: #003366;
+}
+
+.dropdown ul li em {
+    color: #003366;
+    font-size: 0.9rem;
 }
