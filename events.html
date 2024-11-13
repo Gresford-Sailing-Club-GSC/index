@@ -38,51 +38,122 @@
     </header>
 
     <main>
-        <section id="calendar-embed">
-            <h2>Calendar</h2>
-            <iframe 
-                src="https://calendar.google.com/calendar/u/0/embed?src=webmaster.gresfordsc@gmail.com&ctz=Europe/London" 
-                style="border: 0;" 
-                width="100%" 
-                height="600" 
-                frameborder="0" 
-                scrolling="no">
-            </iframe>
-        </section>
-
+        
         <section id="sailing-programme">
             <h2>Sailing Programme</h2>
-            <article>
-                <h3>Tuesday/Thursday Evenings - Starting 5th April</h3>
-                <p>From 18:00 (By arrangement only - safety cover required).</p>
-                <p>Social Sailing for all. When Stand Up Paddle boarding or sailing your model boat, there must be a minimum of two people on-site for safety reasons.</p>
-            </article>
-            <article>
-                <h3>Wednesday</h3>
-                <p>10:00 - 16:00: All Model Boats, DF95’s racing slot & IOM/Marblehead when available.</p>
-            </article>
-            <article>
-                <h3>Wednesday Evenings - Starting 3rd April</h3>
-                <p>Improvers/racing session. Arrive promptly for 18:30; first race starts at 19:00.</p>
-                <p>A 50-minute individual pursuit race. Starting times depend on ability and the boat you are helming. A great race to get involved with, beginners having clear wind to start and getting to know the course before the bigger boats and more experienced sailors catch up. The handicaps are designed so that we all finish the race close together.</p>
-            </article>
-            <article>
-                <h3>Friday Evenings - Starting 3rd May</h3>
-                <p>Junior section dinghy sailing (see Calendar for details).</p>
-            </article>
-            <article>
-                <h3>Saturday Mornings - Starting 3rd April</h3>
-                <p>Dinghy racing, first race starts at 10:30 (see Calendar for details).</p>
-            </article>
-            <article>
-                <h3>Saturday Afternoons</h3>
-                <p>14:00 - 18:00: All Model boats, DF65’s racing slot & IOM/Marblehead when available. (All day in the winter months when there is no dinghy sailing).</p>
-            </article>
-            <article>
-                <h3>Sundays - Starting 4th April</h3>
-                <p>From 10:30 - Social Sailing for Dinghies, SUPs & Model Boats.</p>
-            </article>
+        
+
+            <div class="activity">
+                <div class="activity-header" onclick="toggleDropdown('model-boats')">
+                    <h3>Model Boats</h3>
+                    <p class="click-here">Click here for more details</p>
+                </div>
+                <div id="model-boats" class="dropdown">
+                    <div class="activity-details">
+                        <p>Model boat sailing and racing offer an exciting way to engage with the water without being on it. 
+                           This activity includes racing with DF95’s, DF65’s, IOM (International One Metre), and Marblehead 
+                           classes—perfect for enthusiasts who enjoy the precision and strategy involved in remote-controlled 
+                           sailing. It’s a great opportunity to test your skills, refine techniques, and compete in a friendly, 
+                           social environment.</p>
+                    </div>
+                    <div class="schedule">
+                        <strong>Schedule:</strong>
+                        <ul>
+                            <li><strong>Wednesday:</strong> 10:00–16:00 (All Model Boats, DF95’s racing slot, and IOM/Marblehead when available).</li>
+                            <li><strong>Saturday Afternoons:</strong> 14:00–18:00 (All Model Boats, DF65’s racing slot, and IOM/Marblehead when available).  
+                            <br><em>Note: During winter months, this is available all day if there is no dinghy sailing.</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="activity">
+                <div class="activity-header" onclick="toggleDropdown('social-sailing')">
+                    <h3>Social Sailing</h3>
+                    <p class="click-here">Click here for more details</p>
+                </div>
+                <div id="social-sailing" class="dropdown">
+                    <div class="activity-details">
+                        <p>Social sailing is the perfect way to relax and connect with others while enjoying the water. Open 
+                           to all levels, this activity allows participants to use dinghies, SUPs (Stand Up Paddleboards), or 
+                           model boats in a casual, non-competitive environment. It’s ideal for those looking to enjoy the 
+                           water at their own pace or spend time with like-minded sailors.</p>
+                    </div>
+                    <div class="schedule">
+                        <strong>Schedule:</strong>
+                        <ul>
+                            <li><strong>Tuesday/Thursday Evenings:</strong> From 18:00 (By arrangement only; safety cover required).</li>
+                            <li><strong>Sunday:</strong> From 10:30.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="activity">
+                <div class="activity-header" onclick="toggleDropdown('dinghy-racing')">
+                    <h3>Dinghy Racing</h3>
+                    <p class="click-here">Click here for more details</p>
+                </div>
+                <div id="dinghy-racing" class="dropdown">
+                    <div class="activity-details">
+                        <p>Dinghy racing is a dynamic and exhilarating activity for sailors who love competition. It tests 
+                           your sailing skills, strategy, and ability to navigate the water with precision. Whether you’re a 
+                           seasoned racer or just starting, these events provide an opportunity to sharpen your technique 
+                           while racing in a supportive community.</p>
+                    </div>
+                    <div class="schedule">
+                        <strong>Schedule:</strong>
+                        <ul>
+                            <li><strong>Saturday Mornings (Starting 3rd April):</strong> First race starts at 10:30 (See calendar for details).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="activity">
+                <div class="activity-header" onclick="toggleDropdown('improvers')">
+                    <h3>Improvers/Racing Sessions</h3>
+                    <p class="click-here">Click here for more details</p>
+                </div>
+                <div id="improvers" class="dropdown">
+                    <div class="activity-details">
+                        <p>This activity is tailored for sailors who want to improve their skills or ease into racing. 
+                           Individual pursuit races are designed to accommodate different abilities and boat types, with 
+                           handicap adjustments ensuring a level playing field. It’s a fantastic way to learn the course, 
+                           practice racing strategies, and gain confidence while having fun alongside sailors of all levels.</p>
+                    </div>
+                    <div class="schedule">
+                        <strong>Schedule:</strong>
+                        <ul>
+                            <li><strong>Wednesday Evenings (Starting 3rd April):</strong> Arrive at 18:30; first race starts at 19:00.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="activity">
+                <div class="activity-header" onclick="toggleDropdown('junior-dinghy')">
+                    <h3>Junior Dinghy Sailing</h3>
+                    <p class="click-here">Click here for more details</p>
+                </div>
+                <div id="junior-dinghy" class="dropdown">
+                    <div class="activity-details">
+                        <p>Specifically designed for young sailors, junior dinghy sailing offers a fun, safe, and engaging 
+                           way to learn the basics of sailing or refine skills. Under expert guidance, junior participants 
+                           build confidence on the water and develop their abilities in a supportive environment.</p>
+                    </div>
+                    <div class="schedule">
+                        <strong>Schedule:</strong>
+                        <ul>
+                            <li><strong>Friday Evenings (Starting 3rd May):</strong> Refer to the calendar for more details.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+        
+        
 
         <section id="social-events">
             <h2>Social Events</h2>
@@ -111,6 +182,19 @@
                 <p>The last event of the year after the last dinghy race, with mulled wine, mince pies, Christmas cards, and carols.</p>
             </article>
         </section>
+
+        <section id="calendar-embed">
+            <h2>Calendar</h2>
+            <iframe 
+                src="https://calendar.google.com/calendar/u/0/embed?src=webmaster.gresfordsc@gmail.com&ctz=Europe/London" 
+                style="border: 0;" 
+                width="100%" 
+                height="600" 
+                frameborder="0" 
+                scrolling="no">
+            </iframe>
+        </section>
+
     </main>
 
     <footer>
@@ -127,10 +211,10 @@
             <p>Follow us:</p>
             <div class="social-icons">
                 <a href="https://www.facebook.com/people/The-Real-Gresford-Sailing-Club/100086389089897/" target="_blank">
-                    <img src="assets/fb.png" alt="Facebook" width="40" height="40">
+                    <img src="assets/icons/fb.png" alt="Facebook" width="40" height="40">
                 </a>
                 <a href="https://www.youtube.com/channel/UCymstTr0Qc9lUwZJQW7_AKA" target="_blank">
-                    <img src="assets/youtube.png" alt="YouTube" width="40" height="40">
+                    <img src="assets/icons/youtube.png" alt="YouTube" width="40" height="40">
                 </a>
             </div>
         </div>
