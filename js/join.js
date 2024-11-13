@@ -186,3 +186,8 @@ document.getElementById("membershipForm").addEventListener("submit", async (even
         alert("There was an error connecting to the server. Please try again.");
     }
 });
+
+function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+}
