@@ -3,6 +3,7 @@ function toggleDropdown(id) {
     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 }
 
+
 document.getElementById("bookingForm").addEventListener("submit", async (event) => {
     event.preventDefault();
 
@@ -39,8 +40,8 @@ document.getElementById("bookingForm").addEventListener("submit", async (event) 
                     border-radius: 8px;
                 }
                 .header {
-                    background-color: #4CAF50;
-                    color: white;
+                    background-color: #d8f0ff;
+                    color: black;
                     text-align: center;
                     padding: 20px;
                 }
