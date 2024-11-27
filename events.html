@@ -37,7 +37,8 @@
         </div>
     </header>
 
-    <main>
+
+        <main>
         
         <section id="sailing-programme">
             <h2>Sailing Programme</h2>
@@ -66,7 +67,7 @@
                     </div>
                 </div>
             </div>
-        
+            
             <div class="activity">
                 <div class="activity-header" onclick="toggleDropdown('social-sailing')">
                     <h3>Social Sailing</h3>
@@ -153,7 +154,32 @@
             </div>
         </section>
         
+        <section id="booking">
+            <h2>Book an Event</h2>
+            <form id="bookingForm">
+                <label for="activityType">Select Activity:</label>
+                <select id="activityType" name="activityType" required>
+                    <option value="" disabled selected>Select an activity</option>
+                    <option value="Model Boats">Model Boats</option>
+                    <option value="Social Sailing">Social Sailing</option>
+                    <option value="Dinghy Racing">Dinghy Racing</option>
+                    <option value="Improvers/Racing Sessions">Improvers/Racing Sessions</option>
+                    <option value="Junior Dinghy Sailing">Junior Dinghy Sailing</option>
+                </select>
         
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+        
+                <button type="submit">Book</button>
+            </form>
+            <p id="responseMessage"></p>
+        </section>
 
         <section id="social-events">
             <h2>Social Events</h2>
@@ -211,10 +237,10 @@
             <p>Follow us:</p>
             <div class="social-icons">
                 <a href="https://www.facebook.com/people/The-Real-Gresford-Sailing-Club/100086389089897/" target="_blank">
-                    <img src="assets/fb.png" alt="Facebook" width="40" height="40">
+                    <img src="assets/icons/fb.png" alt="Facebook" width="40" height="40">
                 </a>
                 <a href="https://www.youtube.com/channel/UCymstTr0Qc9lUwZJQW7_AKA" target="_blank">
-                    <img src="assets/youtube.png" alt="YouTube" width="40" height="40">
+                    <img src="assets/icons/youtube.png" alt="YouTube" width="40" height="40">
                 </a>
             </div>
         </div>
@@ -230,3 +256,4 @@
     <script src="js/event.js"></script>
 </body>
 </html>
+
