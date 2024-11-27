@@ -401,6 +401,7 @@ footer .line {
 
 
 /* Events Page */
+
 section h2 {
     font-size: 1.8rem;
     color: #003366;
@@ -530,6 +531,7 @@ section h2 {
 
 #booking form button:hover {
     background-color: #45a049; 
+}
 
 #responseMessage {
     font-size: 14px;
