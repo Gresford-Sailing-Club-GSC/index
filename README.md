@@ -1,4 +1,4 @@
-# Gresford Sailing Club – Website Revamp  
+# Gresford Sailing Club 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()
 [![GitHub Pages Deployment](https://img.shields.io/badge/GitHub%20Pages-Deployed-0A66C2)](https://gresford-sailing-club-gsc.github.io/index/)
 
