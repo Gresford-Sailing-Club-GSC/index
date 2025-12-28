@@ -1,4 +1,4 @@
-# Gresford Sailing Club – Website Revamp  
+# Gresford Sailing Club 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()
 [![GitHub Pages Deployment](https://img.shields.io/badge/GitHub%20Pages-Deployed-0A66C2)](https://gresford-sailing-club-gsc.github.io/index/)
 
@@ -55,7 +55,7 @@ The initiative recognised the contributions of:
 
 - **Dr. Phoebe Teh** (supervisor)  
 - **Daniel Emakporuena** (lead developer completing the KTV)  
-- **Craig Williams**  
+- **Craig Williams**  (Support)
 
 The project has strengthened digital capability for a long-standing local sports club, enabling clearer communication, better onboarding for new members, and enhanced visibility for community events.
 
