@@ -54,7 +54,7 @@ This work was completed as part of a collaboration supported by the **Shared Pro
 The initiative recognised the contributions of:
 
 - **Dr. Phoebe Teh** (supervisor)  
-- **Daniel Emakporuena** (lead developer completing the KTV)  
+- **Daniel Emakporuena** (lead developer for the KTV)  
 - **Craig Williams**  (Support)
 
 The project has strengthened digital capability for a long-standing local sports club, enabling clearer communication, better onboarding for new members, and enhanced visibility for community events.
